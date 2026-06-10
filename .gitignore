@@ -1,3 +1,5 @@
 /.quarto/
 /_site/
 /_last-compiled.html
+
+**/*.quarto_ipynb
