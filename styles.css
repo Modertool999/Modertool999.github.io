@@ -1,0 +1,364 @@
+/* Kill Quarto's default spacing */
+html,
+body,
+body * {
+  cursor: url("assets/cursor.svg") 12 12, auto !important;
+}
+
+html:active,
+html:active *,
+body:active,
+body:active *,
+*:active {
+  cursor: url("assets/cursor_click.svg") 12 12, auto !important;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #f2f2f2;
+  overflow: hidden;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body.quarto-light {
+  background: #f2f2f2;
+}
+
+html:has(.simple-page),
+body:has(.simple-page) {
+  height: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#quarto-content,
+#quarto-document-content,
+main,
+.content,
+.page-columns,
+.column-page,
+.column-screen,
+.page-layout-full {
+  margin: 0 !important;
+  padding: 0 !important;
+  max-width: none !important;
+  width: 100vw !important;
+  display: block !important;
+  grid-template-columns: none !important;
+  grid-column: auto !important;
+}
+
+#title-block-header,
+.quarto-title-block,
+#quarto-document-content > header {
+  display: none !important;
+}
+
+#quarto-document-content p {
+  margin: 0 !important;
+}
+
+/* The whole homepage is a poster/canvas */
+.site-poster {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: #f2f2f2;
+  overflow: hidden;
+}
+
+.compiled-stamp {
+  position: absolute;
+  top: 1.4vh;
+  right: 1.6vw;
+  z-index: 40;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: clamp(10px, 0.95vw, 14px);
+  line-height: 1.15;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: black;
+  text-align: right;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.background-video {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+/* Huge red word behind everything */
+.red-word {
+  position: absolute;
+  left: -0.3vw;
+  top: 2.5vh;
+  z-index: 1;
+
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 25.6vw;
+  line-height: 0.8;
+  font-weight: 900;
+  letter-spacing: 0;
+  transform: scale(1.03, 0.8);
+  transform-origin: left top;
+
+  color: #ff2b16;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.modi-blue-overlays {
+  position: absolute;
+  inset: 0;
+  z-index: 19;
+  pointer-events: none;
+}
+
+.letter-window {
+  position: absolute;
+  overflow: hidden;
+  mix-blend-mode: screen;
+}
+
+.letter-window::before {
+  content: "MODI";
+  position: absolute;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 25.6vw;
+  line-height: 0.8;
+  font-weight: 900;
+  letter-spacing: 0;
+  transform: scale(1.03, 0.8);
+  transform-origin: left top;
+  color: rgba(126, 220, 255, 0.76);
+  text-shadow: 0 0 0.35em rgba(126, 220, 255, 0.48);
+  white-space: nowrap;
+}
+
+.letter-window-1 {
+  left: 41.2vw;
+  top: 18.5vh;
+  width: 14.2vw;
+  height: 16.5vh;
+}
+
+.letter-window-1::before {
+  left: -41.5vw;
+  top: -16vh;
+}
+
+.letter-window-2 {
+  left: 54.8vw;
+  top: 10.5vh;
+  width: 23.8vw;
+  height: 25vh;
+}
+
+.letter-window-2::before {
+  left: -55.1vw;
+  top: -8vh;
+}
+
+.letter-window-3 {
+  left: 54.8vw;
+  top: 25.4vh;
+  width: 16.8vw;
+  height: 10vh;
+}
+
+.letter-window-3::before {
+  left: -55.1vw;
+  top: -22.9vh;
+}
+
+.letter-window-4 {
+  left: 77.3vw;
+  top: 14.7vh;
+  width: 19vw;
+  height: 20.5vh;
+}
+
+.letter-window-4::before {
+  left: -77.6vw;
+  top: -12.2vh;
+}
+
+/* Main paragraph text */
+.main-text {
+  position: absolute;
+  left: 3.1vw;
+  top: 39vh;
+  width: 31vw;
+  z-index: 20;
+
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: clamp(18px, 2.2vw, 30px);
+  line-height: 1.08;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: black;
+}
+
+.main-text em {
+  font-style: italic;
+}
+
+.collage-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  transform: translate(20vw, 10vh);
+}
+
+.collage-layer p {
+  margin: 0 !important;
+}
+
+/* All collage images. Each image sets these custom properties in index.qmd. */
+.collage {
+  position: absolute;
+  display: block;
+  left: var(--left, auto);
+  top: var(--top, auto);
+  right: var(--right, auto);
+  bottom: var(--bottom, auto);
+  z-index: var(--z, 1);
+  width: var(--width, auto);
+  height: var(--height, auto);
+  object-fit: var(--fit, cover);
+  transform: var(--transform, none);
+}
+
+/* Bottom links */
+.footer-links {
+  position: absolute;
+  left: 3.1vw;
+  right: 3.1vw;
+  bottom: 2.2vh;
+  z-index: 30;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 5vw;
+
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: clamp(18px, 3vw, 38px);
+  line-height: 1.05;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: black;
+}
+
+.footer-links a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-links a:focus-visible {
+  text-decoration: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.12em;
+}
+
+.simple-page {
+  box-sizing: border-box;
+  width: min(760px, calc(100vw - 36px));
+  height: 100svh;
+  overflow: hidden;
+  padding: clamp(14px, 3vh, 32px) 0 clamp(14px, 3vh, 32px)
+    clamp(18px, 5vw, 42px);
+  font-family: Helvetica, Arial, sans-serif;
+  color: black;
+  background: #f2f2f2;
+}
+
+.simple-page h1 {
+  margin: 0 0 clamp(14px, 3vh, 30px);
+  font-size: clamp(34px, 7vw, 68px);
+  line-height: 0.86;
+  font-weight: 900;
+  letter-spacing: 0;
+  color: #ff2b16;
+}
+
+.simple-page p,
+.simple-page li {
+  max-width: 100%;
+  font-size: clamp(17px, 2vw, 22px);
+  line-height: 1.08;
+}
+
+.simple-page p {
+  margin: 0 0 clamp(8px, 1.6vh, 14px) !important;
+}
+
+.simple-page ol {
+  max-width: 100%;
+  margin: 0;
+  padding-left: 1.2em;
+}
+
+.simple-page li + li {
+  margin-top: clamp(10px, 2vh, 18px);
+}
+
+.simple-page a,
+.back-link {
+  color: inherit;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.12em;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: clamp(18px, 3.8vh, 38px);
+  font-size: clamp(16px, 2vw, 24px);
+  line-height: 1;
+}
+
+/* Mobile: make it scroll instead of exploding */
+@media (max-width: 640px) {
+  html:not(:has(.simple-page)),
+  body:not(:has(.simple-page)) {
+    overflow-y: auto;
+  }
+
+  .site-poster {
+    height: 100svh;
+    min-height: 700px;
+  }
+
+  .red-word {
+    font-size: 41vw;
+    top: 3vh;
+  }
+
+  .main-text {
+    top: 36vh;
+    width: 54vw;
+    font-size: 20px;
+    line-height: 1.03;
+  }
+
+  .collage-layer {
+    transform: translate(24vw, 9vh);
+  }
+
+  .footer-links {
+    font-size: 22px;
+    gap: 20px;
+  }
+}
