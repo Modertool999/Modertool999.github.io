@@ -1,0 +1,14 @@
+---
+title: "Credits"
+format:
+  html:
+    title-block: false
+---
+
+<div class="simple-page">
+<a class="back-link" href="index.html">Home</a>
+
+<h1>Credits</h1>
+
+<p>All images used on this site are open source from <a href="https://commons.wikimedia.org/wiki/Main_Page">Wikimedia Commons</a>. All ideas are my own.</p>
+</div>

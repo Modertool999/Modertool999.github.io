@@ -1,0 +1,26 @@
+project:
+  type: website
+  pre-render: scripts/pre-render.sh
+  render:
+    - index.qmd
+    - blog.qmd
+    - credits.qmd
+  resources:
+    - assets/cursor.svg
+    - assets/cursor_click.svg
+    - assets/favicon.png
+    - collage.js
+    - assets/collage/*.webp
+
+website:
+  title: "Modi Goldstein-Rosenfeld"
+  favicon: assets/favicon.png
+  navbar: false
+  search: false
+
+format:
+  html:
+    css: styles.css
+    title-block: false
+    toc: false
+    page-layout: full
