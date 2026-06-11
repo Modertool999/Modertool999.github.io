@@ -11,3 +11,28 @@ exclude:
   - .bundle
   - .jekyll-cache
   - vendor
+  - assets/background.mp4
+  - assets/yl.mp4
+  - assets/image1.png
+  - assets/image2.jpg
+  - assets/image3.png
+  - assets/image4.png
+  - assets/image5.png
+  - assets/image6.png
+  - assets/image7.png
+  - assets/image8.jpg
+  - assets/image9.png
+  - assets/image10.png
+  - assets/image11.png
+  - assets/image13.png
+  - assets/image14.jpg
+  - assets/image15.jpg
+  - assets/image16.jpg
+  - assets/image17.jpg
+  - assets/image18.jpg
+  - assets/image19.jpg
+  - assets/image20.jpg
+  - assets/image21.jpg
+  - assets/image22.jpg
+  - assets/image23.png
+  - assets/image25.jpg
