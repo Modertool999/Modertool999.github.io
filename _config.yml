@@ -10,5 +10,4 @@ exclude:
   - scripts
   - .bundle
   - .jekyll-cache
-  - .quarto
   - vendor
