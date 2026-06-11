@@ -1,0 +1,14 @@
+title: "Modi Goldstein-Rosenfeld"
+description: "Personal website for Modi Goldstein-Rosenfeld."
+timezone: America/New_York
+baseurl: ""
+url: ""
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - scripts
+  - .bundle
+  - .jekyll-cache
+  - .quarto
+  - vendor

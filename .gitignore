@@ -1,5 +1,9 @@
 /.quarto/
 /_site/
+/.jekyll-cache/
+/.sass-cache/
+/.bundle/
+/vendor/
 /_last-compiled.html
 
 **/*.quarto_ipynb

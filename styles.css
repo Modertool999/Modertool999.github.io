@@ -1,4 +1,9 @@
-/* Kill Quarto's default spacing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html,
 body,
 body * {
@@ -18,58 +23,47 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   background: #f2f2f2;
-  overflow: hidden;
   font-family: Helvetica, Arial, sans-serif;
 }
 
-body.quarto-light {
-  background: #f2f2f2;
-}
-
-html:has(.simple-page),
-body:has(.simple-page) {
+body.home-page {
   height: 100%;
-  min-height: 100%;
+  overflow: hidden;
   overflow-x: hidden;
-  overflow-y: hidden;
 }
 
-#quarto-content,
-#quarto-document-content,
-main,
-.content,
-.page-columns,
-.column-page,
-.column-screen,
-.page-layout-full {
-  margin: 0 !important;
-  padding: 0 !important;
-  max-width: none !important;
-  width: 100vw !important;
-  display: block !important;
-  grid-template-columns: none !important;
-  grid-column: auto !important;
-}
-
-#title-block-header,
-.quarto-title-block,
-#quarto-document-content > header {
-  display: none !important;
-}
-
-#quarto-document-content p {
-  margin: 0 !important;
+body.simple-body {
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 /* The whole homepage is a poster/canvas */
 .site-poster {
+  --page-pad: 3.1vw;
+  --copy-boundary: 38.5vw;
+  --copy-gutter: clamp(12px, 2.2vw, 28px);
+
   position: relative;
   width: 100vw;
   height: 100vh;
+  height: 100svh;
   background: #f2f2f2;
   overflow: hidden;
+}
+
+.site-poster::after {
+  content: "";
+  position: absolute;
+  left: var(--copy-boundary);
+  top: 34vh;
+  bottom: 2.2vh;
+  z-index: 28;
+  width: 1px;
+  background: rgba(0, 0, 0, 0.72);
+  pointer-events: none;
+  opacity: 0;
 }
 
 .compiled-stamp {
@@ -197,7 +191,7 @@ main,
 /* Main paragraph text */
 .main-text {
   position: absolute;
-  left: 3.1vw;
+  left: var(--page-pad);
   top: 39vh;
   width: 31vw;
   z-index: 20;
@@ -208,10 +202,19 @@ main,
   font-weight: 400;
   letter-spacing: 0;
   color: black;
+  overflow-wrap: break-word;
 }
 
 .main-text em {
   font-style: italic;
+}
+
+.main-text p {
+  margin: 0;
+}
+
+.main-text p + p {
+  margin-top: 1em;
 }
 
 .collage-layer {
@@ -226,7 +229,7 @@ main,
   margin: 0 !important;
 }
 
-/* All collage images. Each image sets these custom properties in index.qmd. */
+/* All collage images. Each image sets these custom properties in collage.js. */
 .collage {
   position: absolute;
   display: block;
@@ -239,16 +242,20 @@ main,
   height: var(--height, auto);
   object-fit: var(--fit, cover);
   transform: var(--transform, none);
+  outline: 1px solid rgba(0, 0, 0, 0.68);
+  outline-offset: -1px;
 }
 
 /* Bottom links */
 .footer-links {
   position: absolute;
-  left: 3.1vw;
-  right: 3.1vw;
+  left: var(--page-pad);
+  right: var(--page-pad);
   bottom: 2.2vh;
   z-index: 30;
   display: flex;
+  flex-wrap: wrap;
+  min-width: 0;
   align-items: flex-end;
   justify-content: flex-start;
   gap: 5vw;
@@ -264,6 +271,8 @@ main,
 .footer-links a {
   color: inherit;
   text-decoration: none;
+  max-width: 100%;
+  overflow-wrap: break-word;
 }
 
 .footer-links a:hover,
@@ -276,8 +285,7 @@ main,
 .simple-page {
   box-sizing: border-box;
   width: min(760px, calc(100vw - 36px));
-  height: 100svh;
-  overflow: hidden;
+  min-height: 100svh;
   padding: clamp(14px, 3vh, 32px) 0 clamp(14px, 3vh, 32px)
     clamp(18px, 5vw, 42px);
   font-family: Helvetica, Arial, sans-serif;
@@ -302,7 +310,7 @@ main,
 }
 
 .simple-page p {
-  margin: 0 0 clamp(8px, 1.6vh, 14px) !important;
+  margin: 0 0 clamp(8px, 1.6vh, 14px);
 }
 
 .simple-page ol {
@@ -329,16 +337,23 @@ main,
   line-height: 1;
 }
 
-/* Mobile: make it scroll instead of exploding */
-@media (max-width: 640px) {
-  html:not(:has(.simple-page)),
-  body:not(:has(.simple-page)) {
+/* Portrait: keep text and links inside the left boundary. */
+@media (max-width: 760px), (orientation: portrait) {
+  body.home-page {
     overflow-y: auto;
   }
 
   .site-poster {
+    --page-pad: clamp(10px, 3.1vw, 28px);
+    --copy-boundary: 54vw;
+    --copy-gutter: clamp(10px, 3vw, 24px);
+
     height: 100svh;
     min-height: 700px;
+  }
+
+  .site-poster::after {
+    opacity: 1;
   }
 
   .red-word {
@@ -347,18 +362,25 @@ main,
   }
 
   .main-text {
-    top: 36vh;
-    width: 54vw;
-    font-size: 20px;
+    top: 35vh;
+    width: calc(var(--copy-boundary) - var(--page-pad) - var(--copy-gutter));
+    max-width: calc(var(--copy-boundary) - var(--page-pad) - var(--copy-gutter));
+    font-size: clamp(17px, 4.7vw, 22px);
     line-height: 1.03;
   }
 
   .collage-layer {
-    transform: translate(24vw, 9vh);
+    transform: translate(36vw, 9vh);
   }
 
   .footer-links {
-    font-size: 22px;
-    gap: 20px;
+    right: auto;
+    min-width: 0;
+    max-width: calc(var(--copy-boundary) - var(--page-pad) - var(--copy-gutter));
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.28em;
+    font-size: clamp(16px, 5vw, 24px);
+    line-height: 1;
   }
 }
