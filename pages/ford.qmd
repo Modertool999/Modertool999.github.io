@@ -23,7 +23,7 @@ Note: these coordinates are not derived in the tangency proof in Ford's original
 
 I think that's pretty cool!
 
-The [homepage background](index.qmd) repeats this construction on both sides of evenly spaced number lines crossing at the center (two perpendicular diagonal lines by default), using reduced fractions from $-1$ to $1$, including the endpoints. At $q=1$, the circles correspond to $-\frac{1}{1}$, $\frac{0}{1}$, and $\frac{1}{1}$, each with radius $\frac{1}{2}$. Circles from different copies can overlap.
+The [homepage background](index.qmd) repeats this construction on both sides of evenly spaced number lines crossing at the center (ten lines by default), using reduced fractions from $-1$ to $1$, including the endpoints. At $q=1$, the circles correspond to $-\frac{1}{1}$, $\frac{0}{1}$, and $\frac{1}{1}$, each with radius $\frac{1}{2}$. Circles from different copies can overlap.
 
 Use the sliders on the homepage to change the number of lines and explore how smaller circles emerge as the maximum denominator increases.
 

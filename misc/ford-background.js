@@ -32,7 +32,7 @@
     const maxQ = slider ? Number(slider.value) : 10;
     if (output) output.textContent = maxQ;
 
-    const lineCount = linesSlider ? Number(linesSlider.value) : 2;
+    const lineCount = linesSlider ? Number(linesSlider.value) : 10;
     if (linesOutput) linesOutput.textContent = lineCount;
 
     // Cover the viewport while preserving circle shapes and line angles.
