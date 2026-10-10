@@ -187,3 +187,40 @@ body:has(.ford-controls) .home-photo-controls .home-background-controls {
     padding: 12px;
   }
 }
+
+.watermelon-photo-frame {
+  position: relative;
+  flex: 1 1 300px;
+  min-width: 0;
+  max-width: 400px;
+  aspect-ratio: 4 / 3;
+}
+
+.watermelon-photo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 75%;
+  max-width: none;
+  height: 133.333333%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+}
+
+@media (max-width: 600px) {
+  .home-photo-controls {
+    flex-wrap: wrap;
+  }
+
+  .homepage-photo-frame {
+    flex-basis: calc(45% - 6px);
+  }
+
+  body:has(.ford-controls) .home-photo-controls .home-background-controls {
+    flex-basis: calc(55% - 6px);
+    box-sizing: border-box;
+  }
+
+  .watermelon-photo-frame {
+    flex-basis: 100%;
+  }
+}

@@ -17,11 +17,17 @@ Feel free to email me at [mbg237@cornell.edu](mailto:mbg237@cornell.edu).
 
 ```{=html}
 <div class="homepage-photo-frame">
-  <img src="media/modi-upright-source.jpg" class="homepage-photo" alt="Photo of me looking up" width="4608" height="3456">
+  <img src="media/modi.jpg" class="homepage-photo" alt="Photo of me looking up" width="4608" height="3456">
 </div>
 ```
 
 {{< include misc/ford-controls.html >}}
+
+```{=html}
+<div class="watermelon-photo-frame">
+  <img src="media/watermelon.jpg" class="watermelon-photo" alt="Watermelon" width="4284" height="5712">
+</div>
+```
 
 
 :::
