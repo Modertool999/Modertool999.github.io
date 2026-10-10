@@ -1,1 +1,107 @@
-/* css styles */
+/* Ford background: behind homepage content, without blocking clicks. */
+body.ford-fullscreen {
+  isolation: isolate;
+}
+
+#ford-background {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Compact shared sliders */
+.ford-controls {
+  width: 220px;
+  max-width: 100%;
+  margin: 20px 0;
+  font-size: 0.75rem;
+  color: var(--bs-secondary-color, #666);
+}
+
+.ford-controls label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.ford-controls output {
+  color: var(--bs-body-color, #333);
+  font-variant-numeric: tabular-nums;
+  min-width: 2ch;
+  text-align: right;
+}
+
+.ford-controls input[type="range"] {
+  display: block;
+  appearance: none;
+  width: 100%;
+  height: 20px;
+  margin: 2px 0 10px;
+  background: transparent;
+  color: var(--bs-body-color, #333);
+  cursor: pointer;
+}
+
+.ford-controls input[type="range"]::-webkit-slider-runnable-track {
+  height: 2px;
+  background: currentColor;
+  opacity: 0.3;
+}
+
+.ford-controls input[type="range"]::-moz-range-track {
+  height: 2px;
+  background: currentColor;
+  opacity: 0.3;
+}
+
+.ford-controls input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  margin-top: -4px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.ford-controls input[type="range"]::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  border: 0;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.ford-controls input[type="range"]:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Opaque panels keep homepage text and controls clear of the circles. */
+.ford-fullscreen .home-cover {
+  --bs-body-bg: #fff;
+  --bs-body-color: #212529;
+  --bs-secondary-color: #666;
+  position: relative;
+  background: #fff;
+  color: #212529;
+  padding: 16px 20px;
+  margin: 20px 0 24px;
+  border-radius: 6px;
+}
+
+.ford-fullscreen .home-cover > :last-child {
+  margin-bottom: 0;
+}
+
+.home-background-controls {
+  width: fit-content;
+  max-width: 100%;
+}
+
+.home-background-controls .ford-controls {
+  margin: 0 0 12px;
+}

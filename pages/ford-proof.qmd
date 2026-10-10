@@ -1,0 +1,43 @@
+Shoutout to my high school algebra and geometry teacher. 
+
+Suppose $\frac{a}{b}$ and $\frac{c}{d}$ are adjacent reduced fractions with $b,d>0$. Then $|ad-bc|=1$, and their Ford circles are externally tangent. Their radii and centers are
+
+$$
+R_1=\frac{1}{2b^2},\qquad R_2=\frac{1}{2d^2},
+$$
+
+$$
+C_1=\left(\frac{a}{b},R_1\right),\qquad
+C_2=\left(\frac{c}{d},R_2\right).
+$$
+
+We know from the [section formula](https://en.wikipedia.org/wiki/Section_formula) that a point $P$ dividing the segment from $A=(x_1,y_1)$ to $B=(x_2,y_2)$ in the ratio $\operatorname{distance}(A,P):\operatorname{distance}(P,B)=m:n$ has coordinates
+
+$$
+P=\left(\frac{nx_1+mx_2}{m+n},\;\frac{ny_1+my_2}{m+n}\right).
+$$
+
+![Internal division of a line segment. Diagram by [Huzaifa abedeen](https://commons.wikimedia.org/wiki/File:Internal_division.png), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).](../media/section-formula.png){#fig-section-formula width=560 fig-alt="A line segment divided at an interior point, with red and green similar right triangles illustrating the section formula." style="background: white; padding: 12px;"}
+
+The tangent point $T$ lies between the centers, at distances $R_1$ and $R_2$ from $C_1$ and $C_2$, respectively. So we can substitute $A=C_1$, $B=C_2$, $m=R_1$, and $n=R_2$:
+
+$$
+\begin{aligned}
+T
+&=\left(
+\frac{R_2\frac{a}{b}+R_1\frac{c}{d}}{R_1+R_2},
+\;\frac{R_2R_1+R_1R_2}{R_1+R_2}
+\right)\\[6pt]
+&=\left(
+\frac{\frac{a}{2bd^2}+\frac{c}{2db^2}}
+{\frac{1}{2b^2}+\frac{1}{2d^2}},
+\;\frac{\frac{1}{2b^2d^2}}
+{\frac{1}{2b^2}+\frac{1}{2d^2}}
+\right)\\[6pt]
+&=\boxed{\left(\frac{ab+cd}{b^2+d^2},\;\frac{1}{b^2+d^2}\right)}.
+\end{aligned}
+$$
+
+Since $b,d>0$, we have $b^2>0$ and $d^2>0$, so $b^2+d^2>0$. Thus the denominator is nonzero. Both numerators and the denominator are integers, so both coordinates are rational.
+
+[Back to Ford circles](ford.qmd)

@@ -1,0 +1,32 @@
+---
+title: "Ford Circles"
+---
+
+Lester R. Ford presented these circles and proved their tangency and non-overlap properties in his 1938 paper [“Fractions”](https://www.maths.ed.ac.uk/~v1ranick/papers/ford.pdf), published in *The American Mathematical Monthly*.
+
+Each reduced fraction $\frac{a}{b}$ defines a Ford circle with radius $r=\frac{1}{2b^2}$ and center $(\frac{a}{b},r)$. Hence, every Ford circle is tangent to the number line at $\frac{a}{b}$, since the $y$ value of its center is exactly its radius.
+
+Remarkably, any two distinct Ford circles on the same side of a single number line are either tangent or disjoint: they never overlap! In fact, two Ford circles corresponding to $\frac{a}{b}$ and $\frac{c}{d}$ are tangent exactly when
+
+$$
+|ad-bc|=1.
+$$
+
+When this holds, $\frac{a}{b}$ and $\frac{c}{d}$ are called *adjacent fractions*, and their Ford circles are tangent at
+
+$$
+\left(\frac{ab+cd}{b^2+d^2},\;\frac{1}{b^2+d^2}\right).
+$$
+
+Note: these coordinates are not derived in the tangency proof in Ford's original paper, but they are offered as an exercise in [Allen Hatcher](https://pi.math.cornell.edu/~hatcher/)'s (Cornell professor!!!!) *Topology of Numbers*, Chapter 1, Exercise 4, page 32. Check out my proof [here!](ford-proof.qmd)
+
+
+I think that's pretty cool!
+
+The [homepage background](index.qmd) repeats this construction on both sides of evenly spaced number lines crossing at the center (two perpendicular diagonal lines by default), using reduced fractions from $-1$ to $1$, including the endpoints. At $q=1$, the circles correspond to $-\frac{1}{1}$, $\frac{0}{1}$, and $\frac{1}{1}$, each with radius $\frac{1}{2}$. Circles from different copies can overlap.
+
+Use the sliders on the homepage to change the number of lines and explore how smaller circles emerge as the maximum denominator increases.
+
+Setting $q$ to $0$ hides all circles while leaving the number lines visible: a fraction with denominator zero and its Ford circle radius are undefined. This slider setting is a display option, not a Ford circle with denominator zero.
+
+Inspired by [Jacob Rus's Ford Circles](https://observablehq.com/@jrus/ford-circles).

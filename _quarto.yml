@@ -1,21 +1,24 @@
 project:
   type: website
+  render:
+    - pages/index.qmd
+    - pages/*.qmd
+  resources:
+    - misc/ford-background.js
 
 website:
-  title: "webiste-directory"
+  title: "Modi's homepage"
+  site-url: https://modertool999.github.io
+  favicon: media/favicon.png
   navbar:
     left:
-      - href: index.qmd
+      - href: pages/index.qmd
         text: Home
-      - about.qmd
+      - href: pages/ford.qmd
+        text: Ford Circles
+
 
 format:
   html:
-    theme:
-      - cosmo
-      - brand
+    respect-user-color-scheme: true
     css: styles.css
-    toc: true
-
-
-
