@@ -1,6 +1,6 @@
 <div class="home-cover">
 
-I'm an undergraduate senior studying computer science at [Cornell](https://www.cornell.edu/). I’m interested in theoretical computer science, especially logic and programming languages.
+I'm an undergraduate senior studying computer science at [Cornell](https://www.cornell.edu/). My research interests are in theoretical computer science, especially logic and programming languages.
 
 Outside of CS, I enjoy playing bass guitar, skateboarding, playing [Bethesda games](https://bethesda.net/en/games), and watching New York sports.
 
