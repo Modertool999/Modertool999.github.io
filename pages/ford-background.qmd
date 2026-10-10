@@ -1,8 +1,8 @@
 The [homepage background](index.qmd) makes a few changes to the usual [Ford circle construction](ford.qmd):
 
-- **Limit the fractions.** I draw reduced fractions between $-1$ and $1$, including the endpoints. The **q** slider sets the largest denominator, from 0 to 24. At 1, we get circles for $-1$, $0$, and $1$. At 0, I hide the circles; a zero denominator would be undefined.
-- **Mirror the circles.** Each circle gets a copy on the other side of its number line, with the same radius, $\frac{1}{2q^2}$.
-- **Repeat the number line.** The second slider chooses 1 to 12 lines through the screen's center, spaced $\frac{180^\circ}{N}$ apart. Two lines make a perpendicular X. Both sliders start at 10.
+- **Limit the fractions.** I draw reduced fractions between $-1$ and $1$, including the endpoints. The **q** slider sets the largest denominator. At 1, we get circles for $-1$, $0$, and $1$. At 0, I hide the circles; a zero denominator would be undefined.
+- **Mirror the circles.** Each circle gets a copy on the other side of its number line with the same radius.
+- **Repeat the number line.** The second slider draws $N$ lines through the screen's center, spaced $\frac{180^\circ}{N}$ apart.
 
 Circles on the same side of one line still never overlap. Copies from different lines can overlap.
 
