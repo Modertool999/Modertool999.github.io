@@ -1,14 +1,17 @@
 <div class="home-cover">
 
-I am a current undergrad senior at Cornell studying computer science.
-Generally, I am very interested in theory of computing, logic, and programming langauge theory.
+I'm an undergraduate senior studying computer science at [Cornell](https://www.cornell.edu/). I'm interested in the theory of computing, logic, and programming language theory.
 
-I also like to play the bass guitar, skateboard, and watch New York Sports.
+Outside of CS, I enjoy playing bass guitar, skateboarding, playing [Bethesda games](https://bethesda.net/en/games), and watching New York sports.
 
-wahooo
+Some other stuff I'm up to:
+
+- Head TA for [CS 3110](https://www.cs.cornell.edu/courses/cs3110/).
+- Working with [Dexter Kozen](https://www.cs.cornell.edu/~kozen/) to add tests to probabilistic multiset semantics.
+- Occasionally contributing to [raig](https://github.com/cucapra/raig).
 
 </div>
 
-![](../media/modi.png){.homepage-photo fig-alt="Photo of Modi wearing a baseball cap"}
+![](../media/modi.png){.homepage-photo fig-alt="Photo of me"}
 
 {{< include ../misc/ford-controls.html >}}
