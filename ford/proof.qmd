@@ -40,4 +40,4 @@ $$
 
 Since $b,d>0$, we have $b^2>0$ and $d^2>0$, so $b^2+d^2>0$. Thus the denominator is nonzero. Both numerators and the denominator are integers, so both coordinates are rational.
 
-[Back to Ford circles](ford.qmd)
+[Back to Ford circles](index.qmd)

@@ -1,20 +1,20 @@
 project:
   type: website
   render:
-    - pages/index.qmd
-    - pages/*.qmd
+    - index.qmd
+    - ford/*.qmd
   resources:
     - misc/ford-background.js
 
 website:
   title: "Modi Goldstein-Rosenfeld"
-  site-url: https://modertool999.github.io
+  site-url: https://modigr.com
   favicon: media/favicon.png
   navbar:
     left:
-      - href: pages/index.qmd
+      - href: index.qmd
         text: Home
-      - href: pages/ford.qmd
+      - href: ford/index.qmd
         text: Ford Circles
 
 

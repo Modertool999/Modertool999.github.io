@@ -13,6 +13,6 @@ Feel free to email me at [mbg237@cornell.edu](mailto:mbg237@cornell.edu).
 
 </div>
 
-![](../media/modi.png){.homepage-photo fig-alt="Photo of me"}
+![](media/modi.png){.homepage-photo fig-alt="Photo of me"}
 
-{{< include ../misc/ford-controls.html >}}
+{{< include misc/ford-controls.html >}}
