@@ -1,3 +1,4 @@
+<div class="home-intro-layout">
 <div class="home-cover">
 
 I'm an undergraduate senior studying computer science at [Cornell](https://www.cornell.edu/). My research interests are in theoretical computer science, especially logic and programming languages.
@@ -11,6 +12,9 @@ Some other stuff I'm up to right now:
 
 Feel free to email me at [mbg237@cornell.edu](mailto:mbg237@cornell.edu).
 
+</div>
+
+<img class="homepage-gif" src="../media/homepage.gif" alt="" />
 </div>
 
 ![](../media/modi.png){.homepage-photo fig-alt="Photo of me"}

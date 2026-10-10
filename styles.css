@@ -148,3 +148,25 @@ body:has(.ford-controls) .home-cover > :last-child {
   object-fit: cover;
   object-position: center 75%;
 }
+
+.home-intro-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 180px;
+  align-items: center;
+  gap: 24px;
+}
+
+.homepage-gif {
+  width: 180px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+@media (max-width: 600px) {
+  .home-intro-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+    margin-bottom: 24px;
+  }
+}
