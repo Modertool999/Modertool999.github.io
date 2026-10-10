@@ -1,31 +1,9 @@
----
-title: "How the Ford Background Works"
----
+The [homepage background](index.qmd) makes a few changes to the usual [Ford circle construction](ford.qmd):
 
-The [homepage background](index.qmd) uses the [Ford circle construction](ford.qmd) with a few modifications to create a symmetric, interactive pattern.
+- **Limit the fractions.** I draw reduced fractions between $-1$ and $1$, including the endpoints. The **q** slider sets the largest denominator, from 0 to 24. At 1, we get circles for $-1$, $0$, and $1$. At 0, I hide the circles; a zero denominator would be undefined.
+- **Mirror the circles.** Each circle gets a copy on the other side of its number line, with the same radius, $\frac{1}{2q^2}$.
+- **Repeat the number line.** The second slider chooses 1 to 12 lines through the screen's center, spaced $\frac{180^\circ}{N}$ apart. Two lines make a perpendicular X. Both sliders start at 10.
 
-## A finite set of fractions
+Circles on the same side of one line still never overlap. Copies from different lines can overlap.
 
-Instead of drawing circles for every rational number, the background uses reduced fractions $\frac{p}{q}$ in the interval $[-1,1]$, including the endpoints, with $1\leq q\leq Q$. Here $Q$ is the maximum denominator selected by the slider labeled **q**. Equivalent fractions, such as $\frac{2}{4}$ and $\frac{1}{2}$, do not get separate circles.
-
-The slider ranges from 0 to 24 and starts at 10. At 1, the fractions are $-\frac{1}{1}$, $\frac{0}{1}$, and $\frac{1}{1}$, each with radius $\frac{1}{2}$. At 0, no circles are drawn, but the number lines remain visible. Zero is a display option: a fraction with denominator zero and its Ford circle radius would be undefined.
-
-## Circles on both sides
-
-The usual construction places circles above one horizontal number line. The background also reflects each circle across its number line, producing a matching circle on the other side. The radius remains $\frac{1}{2q^2}$.
-
-## Multiple number lines
-
-The **Number of lines** slider repeats this mirrored construction around several lines through the center of the screen. It ranges from 1 to 12 and starts at 10.
-
-With $N$ lines, consecutive lines differ in angle by $\frac{\pi}{N}$ radians, or $\frac{180^\circ}{N}$. Only half a turn is needed because each line extends in both directions. The first line is at $-45^\circ$; choosing two lines gives the perpendicular diagonal X.
-
-Ford circles on the same side of one number line remain tangent or disjoint. Circles belonging to different reflected or rotated copies can overlap, creating the layered pattern.
-
-## Fitting the screen
-
-Each number line uses the same scale, so circles stay circular and angles are preserved. One mathematical unit is drawn as half the viewport's diagonal length, and every line passes through the viewport's center. The lines extend beyond the screen, while circles outside the viewport are clipped.
-
-The strokes use the page's text color at 20% opacity. The drawing resizes with the window, and blue panels keep the homepage text and controls readable over it.
-
-[Try the sliders](index.qmd) · [Back to Ford circles](ford.qmd)
+The pattern scales with the screen and uses faint strokes so it can sit behind the text.
