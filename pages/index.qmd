@@ -1,7 +1,4 @@
----
-filters:
-  - ../misc/homepage.lua
----
+<div class="home-cover">
 
 I am a current undergrad senior at Cornell studying computer science.
 Generally, I am very interested in theory of computing, logic, and programming langauge theory.
@@ -10,6 +7,8 @@ I also like to play the bass guitar, skateboard, and watch New York Sports.
 
 wahooo
 
-![Photo of Modi wearing a baseball cap](../media/modi.png)
+</div>
+
+![](../media/modi.png){.homepage-photo fig-alt="Photo of Modi wearing a baseball cap"}
 
 {{< include ../misc/ford-controls.html >}}
