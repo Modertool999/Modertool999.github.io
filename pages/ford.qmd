@@ -22,6 +22,6 @@ I think that's pretty cool!
 
 Note: these coordinates are not derived in the tangency proof in Ford's original paper, but they are offered as an exercise in [Allen Hatcher](https://pi.math.cornell.edu/~hatcher/)'s (Cornell professor!!!!) *Topology of Numbers*, Chapter 1, Exercise 4, page 32. Check out my proof [here!](ford-proof.qmd)
 
-The [homepage background](index.qmd) repeats this construction with some slight edits. Read about [the specific modifications](ford-background.qmd).
+The homepage background repeats this construction with some slight edits. Read about [the specific modifications](ford-background.qmd).
 
 Inspired by [Jacob Rus's Ford Circles](https://observablehq.com/@jrus/ford-circles).
