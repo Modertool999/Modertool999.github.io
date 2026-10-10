@@ -7,7 +7,7 @@ Outside of CS, I enjoy playing bass guitar, skateboarding, playing [Bethesda gam
 Some other stuff I'm up to:
 
 - Head TA for [CS 3110](https://www.cs.cornell.edu/courses/cs3110/).
-- Working with [Dexter Kozen](https://www.cs.cornell.edu/~kozen/) to add tests to probabilistic multiset semantics.
+- Working with [Dexter Kozen](https://www.cs.cornell.edu/~kozen/) to add tests to [probabilistic multiset semantics](https://arxiv.org/abs/2412.06754).
 - Occasionally contributing to [raig](https://github.com/cucapra/raig).
 
 </div>
