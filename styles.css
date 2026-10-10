@@ -142,9 +142,48 @@ body:has(.ford-controls) .home-cover > :last-child {
   color: inherit;
 }
 
-.homepage-photo {
-  width: 220px;
-  height: 220px;
-  object-fit: cover;
-  object-position: center 75%;
+/* Let the content column shrink to fit narrow screens. */
+#quarto-document-content {
+  min-width: 0;
+}
+
+/* Keep the entire photo upright, with controls alongside it. */
+.home-photo-controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 20px 0 24px;
+}
+
+.homepage-photo-frame {
+  position: relative;
+  flex: 0 1 220px;
+  min-width: 0;
+  aspect-ratio: 3 / 4;
+}
+
+.homepage-photo-frame .homepage-photo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 133.333333%;
+  max-width: none;
+  height: 75%;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+body:has(.ford-controls) .home-photo-controls .home-background-controls {
+  flex: 0 1 230px;
+  min-width: 0;
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  .home-photo-controls {
+    gap: 12px;
+  }
+
+  body:has(.ford-controls) .home-photo-controls .home-background-controls {
+    padding: 12px;
+  }
 }
