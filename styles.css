@@ -1,3 +1,12 @@
+/* Shared color for the navbar and homepage panels. */
+:root {
+  --site-blue: #517699;
+}
+
+.navbar {
+  background-color: var(--site-blue);
+}
+
 /* Ford background: behind homepage content, without blocking clicks. */
 body.ford-fullscreen {
   isolation: isolate;
@@ -82,12 +91,12 @@ body.ford-fullscreen {
 
 /* Opaque panels keep homepage text and controls clear of the circles. */
 .ford-fullscreen .home-cover {
-  --bs-body-bg: #fff;
-  --bs-body-color: #212529;
-  --bs-secondary-color: #666;
+  --bs-body-bg: var(--site-blue);
+  --bs-body-color: #fff;
+  --bs-secondary-color: #fff;
   position: relative;
-  background: #fff;
-  color: #212529;
+  background: var(--site-blue);
+  color: #fff;
   padding: 16px 20px;
   margin: 20px 0 24px;
   border-radius: 6px;
@@ -104,4 +113,10 @@ body.ford-fullscreen {
 
 .home-background-controls .ford-controls {
   margin: 0 0 12px;
+}
+
+.home-cover a,
+.home-cover a:hover,
+.home-cover a:focus-visible {
+  color: inherit;
 }
