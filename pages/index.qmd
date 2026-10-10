@@ -1,29 +1,15 @@
 ---
-format:
-  html:
-    body-classes: ford-fullscreen
+filters:
+  - ../misc/homepage.lua
 ---
 
-
-::: {.home-cover}
 I am a current undergrad senior at Cornell studying computer science.
 Generally, I am very interested in theory of computing, logic, and programming langauge theory.
 
 I also like to play the bass guitar, skateboard, and watch New York Sports.
 
 wahooo
-:::
 
-<img src="../media/modi.png"
-     alt="Photo of Modi wearing a baseball cap"
-     style="width: 220px; height: 220px;
-            object-fit: cover;
-            object-position: center 75%">
+![Photo of Modi wearing a baseball cap](../media/modi.png)
 
-::: {.home-cover .home-background-controls}
-```{=html}
 {{< include ../misc/ford-controls.html >}}
-```
-
-Background: [Ford circles!!!!](ford.qmd)
-:::

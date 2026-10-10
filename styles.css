@@ -8,7 +8,7 @@
 }
 
 /* Ford background: behind homepage content, without blocking clicks. */
-body.ford-fullscreen {
+body:has(.ford-controls) {
   isolation: isolate;
 }
 
@@ -90,7 +90,7 @@ body.ford-fullscreen {
 }
 
 /* Opaque panels keep homepage text and controls clear of the circles. */
-.ford-fullscreen .home-cover {
+body:has(.ford-controls) .home-cover {
   --bs-body-bg: var(--site-blue);
   --bs-body-color: #fff;
   --bs-secondary-color: #fff;
@@ -102,7 +102,7 @@ body.ford-fullscreen {
   border-radius: 6px;
 }
 
-.ford-fullscreen .home-cover > :last-child {
+body:has(.ford-controls) .home-cover > :last-child {
   margin-bottom: 0;
 }
 
@@ -119,4 +119,11 @@ body.ford-fullscreen {
 .home-cover a:hover,
 .home-cover a:focus-visible {
   color: inherit;
+}
+
+.homepage-photo {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  object-position: center 75%;
 }
