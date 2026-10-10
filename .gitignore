@@ -12,3 +12,6 @@
 **/*.quarto_ipynb
 
 /.quarto/
+
+misc/
+media/
