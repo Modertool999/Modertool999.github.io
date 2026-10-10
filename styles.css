@@ -26,7 +26,7 @@ body:has(.ford-controls) {
   width: 220px;
   max-width: 100%;
   margin: 20px 0;
-  font-size: 0.75rem;
+  font: inherit;
   color: var(--bs-secondary-color, #666);
 }
 
@@ -34,6 +34,11 @@ body:has(.ford-controls) {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+}
+
+.ford-controls input,
+.ford-controls output {
+  font: inherit;
 }
 
 .ford-controls output {
@@ -57,13 +62,13 @@ body:has(.ford-controls) {
 .ford-controls input[type="range"]::-webkit-slider-runnable-track {
   height: 2px;
   background: currentColor;
-  opacity: 0.3;
+  opacity: 1;
 }
 
 .ford-controls input[type="range"]::-moz-range-track {
   height: 2px;
   background: currentColor;
-  opacity: 0.3;
+  opacity: 1;
 }
 
 .ford-controls input[type="range"]::-webkit-slider-thumb {

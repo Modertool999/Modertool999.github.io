@@ -7,7 +7,7 @@ project:
     - misc/ford-background.js
 
 website:
-  title: "Modi's homepage"
+  title: "Modi Goldstein-Rosenfeld"
   site-url: https://modertool999.github.io
   favicon: media/favicon.png
   navbar:
