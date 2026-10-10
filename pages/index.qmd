@@ -4,9 +4,10 @@ I'm an undergraduate senior studying computer science at [Cornell](https://www.c
 
 Outside of CS, I enjoy playing bass guitar, skateboarding, playing [Bethesda games](https://bethesda.net/en/games), and watching New York sports.
 
-Some other stuff I'm up to:
+Some other stuff I'm up to right now:
 
 - Head TA for [CS 3110](https://cs3110.github.io/textbook/cover.html).
+- TA for [EAS 1540](https://classes.cornell.edu/browse/roster/FA26/class/EAS/1540).
 - Working with [Dexter Kozen](https://www.cs.cornell.edu/~kozen/) to add tests to [probabilistic multiset semantics](https://arxiv.org/abs/2412.06754).
 - Occasionally contributing to [raig](https://github.com/cucapra/raig).
 
