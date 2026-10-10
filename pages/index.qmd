@@ -6,12 +6,8 @@ Outside of CS, I enjoy playing bass guitar, skateboarding, playing [Bethesda gam
 
 Some other stuff I'm up to right now:
 
-- Head TA for [CS 3110](https://cs3110.github.io/textbook/cover.html).
-- TA for [EAS 1540](https://classes.cornell.edu/browse/roster/FA26/class/EAS/1540).
-- Working with [Dexter Kozen](https://www.cs.cornell.edu/~kozen/) to add tests to [probabilistic multiset semantics](https://arxiv.org/abs/2412.06754).
-- Occasionally contributing to [raig](https://github.com/cucapra/raig).
-
-
+- **Teaching:** Head TA for [CS 3110](https://cs3110.github.io/textbook/cover.html) and TA for [EAS 1540](https://classes.cornell.edu/browse/roster/FA26/class/EAS/1540).
+- **Research:** Working with [Dexter Kozen](https://www.cs.cornell.edu/~kozen/) to add tests to [probabilistic multiset semantics](https://arxiv.org/abs/2412.06754), and occasionally contributing to [raig](https://github.com/cucapra/raig) in [Adrian Sampson](https://www.cs.cornell.edu/~asampson/)'s group.
 
 Feel free to email me at [mbg237@cornell.edu](mailto:mbg237@cornell.edu).
 
