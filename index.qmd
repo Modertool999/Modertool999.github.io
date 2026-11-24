@@ -33,9 +33,10 @@ Feel free to email me at mbg237@cornell.edu!
 {{< include misc/ford-controls.html >}}
 
 ```{=html}
-<div class="young-modi-photo-frame">
+<figure class="young-modi-photo-frame">
   <img src="media/young_modi.jpg" class="young-modi-photo" alt="Photo of me when I was younger" width="4032" height="3024">
-</div>
+  <figcaption>may 14th, 2010</figcaption>
+</figure>
 ```
 
 

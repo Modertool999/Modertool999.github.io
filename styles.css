@@ -164,15 +164,18 @@ body:has(.ford-controls) .home-cover > :last-child {
   flex: 0 1 220px;
   min-width: 0;
   aspect-ratio: 3 / 4;
+  overflow: hidden;
 }
 
 .homepage-photo-frame .homepage-photo {
+  display: block;
   position: absolute;
   left: 50%;
   top: 50%;
   width: 133.333333%;
   max-width: none;
-  height: 75%;
+  height: auto;
+  margin: 0;
   transform: translate(-50%, -50%) rotate(90deg);
 }
 
@@ -193,15 +196,27 @@ body:has(.ford-controls) .home-photo-controls .home-background-controls {
 }
 
 .young-modi-photo-frame {
+  position: relative;
   flex: 1 1 300px;
   min-width: 0;
   max-width: 400px;
+  margin: 0;
+}
+
+.young-modi-photo-frame figcaption {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  margin: 0;
+  color: #fff;
+  text-align: left;
 }
 
 .young-modi-photo {
   display: block;
   width: 100%;
   height: auto;
+  margin: 0;
 }
 
 @media (max-width: 600px) {
