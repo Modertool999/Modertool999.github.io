@@ -142,6 +142,10 @@ body:has(.ford-controls) .home-cover > :last-child {
   color: inherit;
 }
 
+.home-cover blockquote {
+  color: inherit;
+}
+
 /* Let the content column shrink to fit narrow screens. */
 #quarto-document-content {
   min-width: 0;
@@ -188,22 +192,16 @@ body:has(.ford-controls) .home-photo-controls .home-background-controls {
   }
 }
 
-.watermelon-photo-frame {
-  position: relative;
+.young-modi-photo-frame {
   flex: 1 1 300px;
   min-width: 0;
   max-width: 400px;
-  aspect-ratio: 4 / 3;
 }
 
-.watermelon-photo {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 75%;
-  max-width: none;
-  height: 133.333333%;
-  transform: translate(-50%, -50%) rotate(-90deg);
+.young-modi-photo {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 @media (max-width: 600px) {
@@ -220,7 +218,7 @@ body:has(.ford-controls) .home-photo-controls .home-background-controls {
     box-sizing: border-box;
   }
 
-  .watermelon-photo-frame {
+  .young-modi-photo-frame {
     flex-basis: 100%;
   }
 }

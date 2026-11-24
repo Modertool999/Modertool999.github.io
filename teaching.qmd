@@ -1,0 +1,9 @@
+---
+title: "Teaching"
+---
+
+At Cornell:
+
+- [CS 4160: Formal Verification](https://classes.cornell.edu/browse/roster/SP27/class/CS/4160) - TA, Spring 2027.
+- [CS 3110: Data Structures and Functional Programming (OCaml)](https://cs3110.github.io/textbook/cover.html) - Head TA, Fall 2026; TA, Spring 2026; [AEW facilitator](https://www.duffield.cornell.edu/academic-excellence-workshops/ "Academic Excellence Workshop"), Fall 2025.
+- [EAS 1540: Introductory Oceanography](https://classes.cornell.edu/browse/roster/FA26/class/EAS/1540) - TA, Fall 2026.

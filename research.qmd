@@ -1,0 +1,7 @@
+---
+title: "Research"
+---
+
+Working with [Dexter Kozen](https://www.cs.cornell.edu/~kozen/) on a guarded version of [probabilistic multiset semantics](https://arxiv.org/abs/2412.06754).
+
+Occasionally contributing to [raig](https://github.com/cucapra/raig) with the [Capra](https://capra.cs.cornell.edu/) research group.

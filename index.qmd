@@ -1,17 +1,24 @@
 <div class="home-cover">
 
-I'm an undergrad senior studying computer science at Cornell. My research interests are in theoretical computer science, especially logic and programming languages.
+I'm an undergrad senior studying computer science at Cornell, interested in programming language theory and formal verification. Some areas I find especially exciting:
 
-Outside of CS, I enjoy playing bass guitar, skateboarding, playing [Bethesda games](https://bethesda.net/en/games), and watching New York sports.
+- Category theory and HoTT: I like to browse [nLab](https://ncatlab.org) and the [HoTT book](https://homotopytypetheory.org/book/) (when I can).
 
-Some other stuff I'm up to right now:
+- Coalgebra: automata as coalgebras and using coinduction to reason about infinite behavior.
 
-- **Teaching:** Head TA for [CS 3110](https://cs3110.github.io/textbook/cover.html) and TA for [EAS 1540](https://classes.cornell.edu/browse/roster/FA26/class/EAS/1540).
-- **Research:** Working with [Dexter Kozen](https://www.cs.cornell.edu/~kozen/) on a guarded version of [probabilistic multiset semantics](https://arxiv.org/abs/2412.06754), and (occasionally) contributing to [raig](https://github.com/cucapra/raig) with the [Capra](https://capra.cs.cornell.edu/) research group.
+- Probabilistic programming: [*Foundations of Probabilistic Programming*](https://doi.org/10.1017/9781108770750) is next on my reading list.
 
-Feel free to email me at [mbg237@cornell.edu](mailto:mbg237@cornell.edu)!
-
+Outside of CS, I enjoy playing bass guitar, skateboarding, reading, and watching New York sports.
 </div>
+
+<div class="home-cover">
+
+> I care a lot about biodiversity and environmental justice; in high school I volunteered as a gardener at [Wave Hill](https://www.wavehill.org), a lovely botanical garden in the Bronx. I think a lot about the environmental impact of AI compute and data centers. Whatever we build should be worth what it costs the world.
+</div>
+
+
+
+
 
 ::: {.home-photo-controls}
 
@@ -24,8 +31,8 @@ Feel free to email me at [mbg237@cornell.edu](mailto:mbg237@cornell.edu)!
 {{< include misc/ford-controls.html >}}
 
 ```{=html}
-<div class="watermelon-photo-frame">
-  <img src="media/watermelon.jpg" class="watermelon-photo" alt="Watermelon" width="4284" height="5712">
+<div class="young-modi-photo-frame">
+  <img src="media/young_modi.jpg" class="young-modi-photo" alt="Photo of me when I was younger" width="4032" height="3024">
 </div>
 ```
 

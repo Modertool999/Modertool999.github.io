@@ -2,6 +2,8 @@ project:
   type: website
   render:
     - index.qmd
+    - teaching.qmd
+    - research.qmd
     - ford/*.qmd
   resources:
     - misc/ford-background.js
@@ -14,6 +16,10 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - href: teaching.qmd
+        text: Teaching
+      - href: research.qmd
+        text: Research
       - href: ford/index.qmd
         text: Ford Circles
 
